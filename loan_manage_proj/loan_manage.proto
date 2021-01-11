@@ -1,0 +1,13 @@
+// Syntax version
+syntax = "proto3";
+
+// Service definition
+service SaveLoanService {
+    rpc SaveLoan (UserDetails) returns (Replymessg);
+}
+
+// Message types
+message UserDetails {
+    string email = 1;
+}
+
